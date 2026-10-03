@@ -1,7 +1,7 @@
 # Carona UCB 🚗🎓
 
 ## 📖 Visão Geral
-Um grupo de estudantes de uma universidade pretende lançar o CaronaUCB, um aplicativo de caronas solidárias entre alunos, professores e servidores de um mesmo campus universitário. A ideia surgiu após uma pesquisa interna apontar que mais de 60% dos estudantes gastam, em média, 40 minutos por trajeto usando transporte público, e que muitos já compartilham caronas informalmente por grupos de WhatsApp, sem nenhum controle de segurança, rota ou confirmação. 
+Este projeto trata-se de um trabalho acadêmico desenvolvido com o objetivo de avaliar a capacidade dos alunos em executar uma Sprint simulada e validar, na prática, os conhecimentos em métodos ágeis. O objeto de estudo desta simulação é o **Carona UCB**, uma proposta de aplicativo de caronas solidárias voltado para alunos, professores e servidores de um mesmo campus universitário.
 
 ## 🎯 Problema e Objetivo
 *   **Problema:** Alta dependência de transporte público e uso de meios informais para compartilhamento de caronas sem controle de segurança, registro de rotas ou garantia de vínculo institucional.
