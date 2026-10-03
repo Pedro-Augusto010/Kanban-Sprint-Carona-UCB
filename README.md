@@ -1,47 +1,38 @@
-🚗 Carona UCB
+# Carona UCB 🚗🎓
 
-📖 Visão Geral
+## 📖 Visão Geral
+Um grupo de estudantes de uma universidade pretende lançar o CaronaUCB, um aplicativo de caronas solidárias entre alunos, professores e servidores de um mesmo campus universitário. A ideia surgiu após uma pesquisa interna apontar que mais de 60% dos estudantes gastam, em média, 40 minutos por trajeto usando transporte público, e que muitos já compartilham caronas informalmente por grupos de WhatsApp, sem nenhum controle de segurança, rota ou confirmação. 
 
-O Carona UCB é um aplicativo de caronas solidárias criado exclusivamente para a comunidade acadêmica (alunos, professores e servidores) de um campus universitário.
+## 🎯 Problema e Objetivo
+*   **Problema:** Alta dependência de transporte público e uso de meios informais para compartilhamento de caronas sem controle de segurança, registro de rotas ou garantia de vínculo institucional.
+*   **Usuário Principal:** Estudantes, professores e demais funcionários da Universidade.
+*   **Sprint Goal:** Validar o fluxo principal do CaronaUCB, permitindo que a comunidade acadêmica consiga se cadastrar, oferecer, buscar e solicitar caronas com segurança.
 
-O projeto surgiu para resolver a alta dependência do transporte público (que consome em média 40 minutos por trajeto) e para trazer segurança e organização ao compartilhamento informal de caronas, antes feito sem controle por grupos de WhatsApp.
+## 🚀 Funcionalidades da Sprint Inicial (Backlog)
+Para validar o fluxo principal (Sprint Goal), foram selecionadas 4 histórias de usuário (User Stories), totalizando 26 Story Points:
 
-✨ Principais Funcionalidades
+*   **Cadastro Institucional (US1 - 5 Pontos):** Apenas pessoas vinculadas à instituição podem acessar o aplicativo. O sistema bloqueia cadastros de domínios que não sejam da universidade e envia um link de validação para o e-mail.
+*   **Oferta de Vagas (US2 - 8 Pontos):** O motorista cadastra a rota com origem, destino, data, horário e quantidade de assentos. A carona fica disponível no sistema imediatamente após ser salva.
+*   **Busca de Caronas (US3 - 8 Pontos):** Pesquisa filtrada por horário e proximidade. O tempo de resposta deve ser estritamente inferior a 2 segundos em Android e iOS, omitindo caronas que já estejam lotadas.
+*   **Solicitação de Vaga (US4 - 5 Pontos):** O motorista recebe a notificação da solicitação, e a vaga fica com o status "pendente" até a aprovação.
 
-O aplicativo foi planejado para garantir rapidez, segurança e privacidade:
+## 🔜 Próximas Funcionalidades (Sprints Futuras)
+Outras histórias foram mantidas na coluna *To Do* por excederem a capacidade da equipe e não impedirem a validação do fluxo principal nesta primeira Sprint:
 
-🔒 Segurança Institucional: Cadastro restrito a usuários com e-mail institucional válido.
+*   **Sistema de Avaliação (US5 - 5 Pontos):** Ativação de uma tela de avaliação de 1 a 5 estrelas quando o horário da viagem for atingido. Avaliações abaixo de 2 estrelas exigem uma justificativa obrigatória em um campo de texto.
+*   **Privacidade e Exclusão de Dados (US6 - 3 Pontos):** Um código rodará diariamente para limpar os registros de localização com mais de 90 dias, registrando a exclusão em um arquivo.
+*   **Gestão de Solicitações (US7 - 3 Pontos):** Ao aceitar a solicitação, o número de vagas da carona diminui em 1 e o passageiro é notificado da resposta.
+*   **Chat Temporário (US8 - 8 Pontos):** Chat interno ativado apenas após o status da carona mudar para "Aceita". O histórico é apagado 24 horas após o fim da viagem para garantir a segurança.
 
-🚘 Oferta de Caronas: Motoristas podem cadastrar rotas, horários e número de vagas disponíveis.
+## 🛠 Metodologia de Trabalho (Kanban e Qualidade)
+A gestão da Sprint foi realizada com metodologias ágeis através do Trello:
 
-🔎 Busca Otimizada: Passageiros podem buscar caronas por horário e proximidade com tempo de resposta inferior a 2 segundos (iOS e Android).
+*   **Quadro Kanban:** Dividido nas colunas *To Do*, *Doing*, *Testing / Code Review* e *Done*.
+*   **Limite de Work in Progress (WIP):** Estabelecido em um máximo de duas tarefas simultâneas para as colunas *Doing* e *Testing / Code Review*, com o intuito de impedir que a equipe inicie diversas atividades ao mesmo tempo, evitando gargalos e perda de foco.
+*   **Definition of Done (DoD):** Um cartão só vai para a coluna final (*Done*) se o código for testado em Android e iOS, todos os critérios de aceitação validados e os rigorosos requisitos de segurança da universidade respeitados.
 
-✅ Gestão de Vagas: Passageiros solicitam a vaga e o motorista pode aceitar ou recusar.
-
-⭐ Sistema de Avaliações: Avaliação mútua (1 a 5 estrelas) ao fim de cada corrida para criar um histórico de confiabilidade. Textos justificativos são obrigatórios para notas baixas.
-
-💬 Comunicação Segura: Chat temporário integrado no app após a confirmação da carona, excluído 24h após a viagem.
-
-🛡️ Privacidade de Dados: Exclusão automática de dados de localização de usuários após 90 dias, cumprindo normas da diretoria de TI.
-
-🚀 Metodologia e Desenvolvimento
-
-O desenvolvimento do Carona UCB é guiado por Metodologias Ágeis, utilizando o framework Kanban via Trello para gestão do fluxo de trabalho.
-
-Sprint 1: Validação do Fluxo Principal
-
-A primeira Sprint teve foco exclusivo em garantir o Sprint Goal: validar o fluxo principal (Cadastro -> Oferta -> Busca -> Solicitação). As histórias de usuário implementadas nesta fase inicial foram:
-
-US1: Cadastro Institucional
-
-US2: Oferta de Vagas
-
-US3: Busca de Caronas
-
-US4: Solicitação de Vaga
-
-Foram aplicadas práticas de Definition of Done (DoD) e controle de Work in Progress (WIP) para garantir a qualidade das entregas, além do acompanhamento via Burndown Chart.
-
-👨‍💻 Autor
-
-Pedro Augusto Ferreira
+## 📈 Métricas e Aprendizados da Equipe
+*   A equipe utilizou um *Burndown Chart* de 20 dias que projetou a entrega inicial dos 26 Story Points.
+*   Entre o décimo primeiro e o décimo quarto dia, o fluxo enfrentou um bloqueio severo na coluna *Testing / Code Review* provocado por problemas complexos de validação na US2 e atrasos de informações por parte do setor de TI da UCB.
+*   Ao respeitar os limites de WIP (máximo de 2 tarefas na coluna de testes), o problema travou o avanço de novos cartões, forçando toda a equipe a se concentrar na resolução do gargalo da US2, que só foi resolvido no décimo sétimo dia.
+*   **Aprendizados:** A experiência demonstrou a necessidade de mapear detalhadamente os cenários de testes no planejamento para aprimorar as estimativas técnicas. Acima de tudo, validou-se o poder dos limites visuais de Kanban, que transformaram um problema técnico em algo visível, forçando a colaboração da equipe e prevenindo o acúmulo de erros.
